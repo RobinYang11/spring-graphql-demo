@@ -1,0 +1,32 @@
+type Query {
+    users: [UserEntity]
+}
+
+type Book{
+    id: String!
+    name:String!
+    uid:String!
+}
+
+type UserEntity {
+    id: String!
+    name: String!
+    age: Int
+    books:[Book]
+}
+
+type Mutation{
+    addUser(user:UserInput):UserEntity
+    addBook(book:BookInput):Book
+}
+
+input BookInput{
+    name:String!
+    uid:String!
+}
+
+input UserInput {
+    name:String!
+    age: Int!
+}
+

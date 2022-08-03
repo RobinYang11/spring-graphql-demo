@@ -1,0 +1,13 @@
+
+
+server:
+  port: 1010
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:DsdBRep1hbl#QT!@122.112.202.79:12327/admin
+      database: dbv
+  graphql:
+    graphiql:
+      enabled: true
